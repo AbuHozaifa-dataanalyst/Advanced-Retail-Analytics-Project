@@ -185,7 +185,7 @@ GROUP BY Store_ID;
 
 ---
 
-## 📊 Dashboard (Optional)
+## 📊 Dashboard 
 
 A Power BI dashboard can be built using this dataset to visualize:
 
@@ -226,3 +226,4 @@ Focused on **SQL for Retail Analytics and Business Intelligence**
 ---
 
 ⭐ If you found this project useful, feel free to **star the repository**.
+
