@@ -57,4 +57,5 @@ Unit_Price DECIMAL(10,2),
 Discount DECIMAL(5,2),
 Total_Amount DECIMAL(10,2),
 Payment_Method VARCHAR(20)
+
 );
