@@ -1,154 +1,160 @@
-🛒 SQL Retail Analytics Project
-📌 1. Project Overview
+# 🛒 SQL Retail Analytics Project
 
-This project demonstrates how SQL can be used to analyze retail sales data and generate business insights.
+## 📌 1. Project Overview
 
-Using a simulated multi-store retail dataset, the analysis focuses on:
+This project demonstrates how **SQL can be used to analyze retail sales data and generate business insights**.
 
-Sales performance
+Using a simulated **multi-store retail dataset**, the analysis focuses on:
 
-Store performance
+* Sales performance
+* Store performance
+* Product trends
+* Customer behavior
+* Promotion effectiveness
 
-Product trends
+The goal of this project is to simulate **real-world tasks performed by retail data analysts in supermarkets and retail chains**.
 
-Customer behavior
+---
 
-Promotion effectiveness
+# 📊 2. Dataset Structure
 
-The goal of this project is to simulate real-world tasks performed by retail data analysts in supermarkets and retail chains.
+The dataset follows a **star schema commonly used in retail analytics**.
 
-📊 2. Dataset Structure
+## Fact Table
 
-The dataset follows a star schema commonly used in retail analytics.
+### Sales
 
-Fact Table
+| Column         | Description               |
+| -------------- | ------------------------- |
+| Sale_ID        | Unique transaction ID     |
+| Sale_Date      | Date of transaction       |
+| Store_ID       | Store where sale occurred |
+| Product_ID     | Product sold              |
+| Customer_ID    | Customer making purchase  |
+| Quantity       | Number of items purchased |
+| Unit_Price     | Price per unit            |
+| Discount       | Discount applied          |
+| Total_Amount   | Final sale value          |
+| Payment_Method | Payment type              |
 
-Sales
+---
 
-Column	Description
-Sale_ID	Unique transaction ID
-Sale_Date	Date of transaction
-Store_ID	Store where sale occurred
-Product_ID	Product sold
-Customer_ID	Customer making purchase
-Quantity	Number of items purchased
-Unit_Price	Price per unit
-Discount	Discount applied
-Total_Amount	Final sale value
-Payment_Method	Payment type
-Dimension Tables
+## Dimension Tables
 
-Stores
+### Stores
 
-Store_ID
+* Store_ID
+* Store_Name
+* City
+* Region
+* Store_Type
+* Opening_Date
 
-Store_Name
+### Products
 
-City
+* Product_ID
+* Product_Name
+* Category
+* Subcategory
+* Brand
+* Cost
+* Price
 
-Region
+### Customers
 
-Store_Type
+* Customer_ID
+* Gender
+* Age_Group
+* City
+* Loyalty_Member
 
-Opening_Date
+### Promotions
 
-Products
+* Promotion_ID
+* Product_ID
+* Promo_Type
+* Start_Date
+* End_Date
+* Discount_Rate
 
-Product_ID
+---
 
-Product_Name
+# 🧰 3. Tools Used
 
-Category
+* SQL
+* SQL Server / PostgreSQL
+* CSV datasets
+* Power BI (optional visualization)
 
-Subcategory
+---
 
-Brand
+# 📊 4. Business Questions
 
-Cost
+This project answers key **retail analytics questions**.
 
-Price
+### 1️⃣ What is the total revenue of the business?
 
-Customers
+SQL file: `retail_kpi_analysis.sql`
 
-Customer_ID
+---
 
-Gender
+### 2️⃣ How do sales change over time?
 
-Age_Group
+SQL file: `retail_kpi_analysis.sql`
 
-City
+---
 
-Loyalty_Member
+### 3️⃣ Which stores generate the highest revenue?
 
-Promotions
+SQL file: `store_performance.sql`
 
-Promotion_ID
+---
 
-Product_ID
+### 4️⃣ Which product categories generate the most sales?
 
-Promo_Type
+SQL file: `product_analysis.sql`
 
-Start_Date
+---
 
-End_Date
+### 5️⃣ Who are the most valuable customers?
 
-Discount_Rate
+SQL file: `customer_analysis.sql`
 
-🧰 3. Tools Used
+---
 
-SQL
+### 6️⃣ Do loyalty program members spend more?
 
-SQL Server / PostgreSQL
+SQL file: `customer_analysis.sql`
 
-CSV datasets
+---
 
-Power BI (optional visualization)
+### 7️⃣ Which products sell the most units?
 
-📊 4. Business Questions
+SQL file: `product_analysis.sql`
 
-This project answers key retail analytics questions.
+---
 
-1️⃣ What is the total revenue of the business?
+### 8️⃣ How do promotions affect sales?
 
-SQL file: retail_kpi_analysis.sql
+SQL file: `promotion_analysis.sql`
 
-2️⃣ How do sales change over time?
+---
 
-SQL file: retail_kpi_analysis.sql
+### 9️⃣ Which regions generate the most revenue?
 
-3️⃣ Which stores generate the highest revenue?
+SQL file: `store_performance.sql`
 
-SQL file: store_performance.sql
+---
 
-4️⃣ Which product categories generate the most sales?
+### 🔟 Which products are frequently bought together?
 
-SQL file: product_analysis.sql
+SQL file: `advanced_retail_analysis.sql`
 
-5️⃣ Who are the most valuable customers?
+---
 
-SQL file: customer_analysis.sql
+# 📂 5. Project Structure
 
-6️⃣ Do loyalty program members spend more?
-
-SQL file: customer_analysis.sql
-
-7️⃣ Which products sell the most units?
-
-SQL file: product_analysis.sql
-
-8️⃣ How do promotions affect sales?
-
-SQL file: promotion_analysis.sql
-
-9️⃣ Which regions generate the most revenue?
-
-SQL file: store_performance.sql
-
-🔟 Which products are frequently bought together?
-
-SQL file: advanced_retail_analysis.sql
-
-📂 5. Project Structure
+```
 sql-retail-analytics-project
 
 data/
@@ -170,31 +176,37 @@ dashboard/
     retail_dashboard.pbix
 
 README.md
-📈 6. Example Insights
+```
+
+---
+
+# 📈 6. Example Insights
 
 Example insights generated from the analysis:
 
-A small number of products generate a large portion of revenue.
+* A small number of products generate a large portion of revenue.
+* Certain stores significantly outperform others.
+* Loyalty program customers contribute more revenue.
+* Sales increase during seasonal promotions.
 
-Certain stores significantly outperform others.
+---
 
-Loyalty program customers contribute more revenue.
-
-Sales increase during seasonal promotions.
-
-🚀 7. Future Improvements
+# 🚀 7. Future Improvements
 
 Possible improvements for this project:
 
-Build a Power BI dashboard
+* Build a Power BI dashboard
+* Add customer cohort analysis
+* Add customer lifetime value (CLV) analysis
+* Add inventory analysis
 
-Add customer cohort analysis
+---
 
-Add customer lifetime value (CLV) analysis
-
-Add inventory analysis
-
-👤 8. Author
+# 👤 8. Author
 
 Retail Analytics Portfolio Project
-Focused on SQL for Retail Analytics and Business Intelligence
+Focused on **SQL for Retail Analytics and Business Intelligence**
+
+---
+
+⭐ If you found this project useful, consider **starring the repository**.
