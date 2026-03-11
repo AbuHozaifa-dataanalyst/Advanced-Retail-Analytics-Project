@@ -70,45 +70,40 @@ This project demonstrates the use of multiple analytics tools:
 # 📁 Project Structure
 
 Retail_Business_Analytics_Project
+│
+├── data/
+│   ├── raw_data
+│   └── cleaned_data
+│
+├── sql/
+│   ├── data_cleaning.sql
+│   ├── retail_kpi_analysis.sql
+│   └── advanced_retail_queries.sql
+│
+├── excel/
+│   ├── retail_kpi_dashboard.xlsx
+│   └── sales_trend_analysis.xlsx
+│
+├── python/
+│   ├── sales_analysis.ipynb
+│   ├── customer_segmentation.ipynb
+│   └── sales_forecasting.ipynb
+│
+├── statistics/
+│   ├── sales_trend_analysis.ipynb
+│   └── promotion_effectiveness_test.ipynb
+│
+├── business_analysis/
+│   └── retail_business_insights.md
+│
+├── dashboard/
+│   └── retail_powerbi_dashboard.pbix
+│
+├── images/
+│   └── dashboard_preview.png
+│
+└── README.md
 
-data/
-raw/
-processed/
-
-sql/
-01_database_setup.sql
-02_table_creation.sql
-03_data_import.sql
-retail_kpi_analysis.sql
-store_performance.sql
-product_analysis.sql
-customer_analysis.sql
-promotion_analysis.sql
-advanced_retail_analysis.sql
-
-excel/
-retail_kpi_dashboard.xlsx
-sales_trend_analysis.xlsx
-
-python/
-data_cleaning.py
-retail_kpi_analysis.py
-customer_segmentation.py
-demand_forecasting.py
-
-statistics/
-sales_trend_analysis.ipynb
-promotion_effectiveness_test.ipynb
-
-business_analysis/
-retail_business_insights.md
-
-dashboard/
-retail_dashboard.pbix
-
-images/
-
-README.md
 
 ---
 
@@ -251,3 +246,4 @@ This project demonstrates the following analytical skills:
 
 Retail Analytics Portfolio Project
 Designed to demonstrate practical skills in **data analytics, retail business intelligence, and decision support**.
+
