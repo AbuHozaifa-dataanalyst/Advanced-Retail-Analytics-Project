@@ -67,7 +67,7 @@ This project demonstrates the use of multiple analytics tools:
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 Retail_Business_Analytics_Project
 │
@@ -246,4 +246,5 @@ This project demonstrates the following analytical skills:
 
 Retail Analytics Portfolio Project
 Designed to demonstrate practical skills in **data analytics, retail business intelligence, and decision support**.
+
 
