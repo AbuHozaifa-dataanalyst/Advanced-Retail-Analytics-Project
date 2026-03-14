@@ -1,3 +1,4 @@
+# Project Overview
 # Retail Business Insights
 
 This project analyzes retail sales data to identify key business insights that can help improve revenue, customer engagement, and operational efficiency.
