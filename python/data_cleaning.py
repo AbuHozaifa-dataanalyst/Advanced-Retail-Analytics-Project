@@ -19,7 +19,5 @@ sales['Total_Amount'] = sales['Quantity'] * sales['Unit_Price']
 sales['Month'] = sales['Sale_Date'].dt.month
 sales['Year'] = sales['Sale_Date'].dt.year
 
-# Save cleaned dataset
 sales.to_csv("data/processed/Sales.csv", index=False)
 
-print("Data cleaning completed successfully")
